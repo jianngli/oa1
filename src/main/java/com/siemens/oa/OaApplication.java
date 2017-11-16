@@ -10,3 +10,6 @@ public class OaApplication {
 		SpringApplication.run(OaApplication.class, args);
 	}
 }
+/**
+ kobe is leader.
+ **/
