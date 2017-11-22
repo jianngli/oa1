@@ -28,17 +28,15 @@ public class HomeController {
 
     /**
      * 根据时间，获取工作和项目细节
-     *
-     * @return
      */
     @RequestMapping(value = "getHoursByTime")
     @ResponseBody
     public HashMap<String, Object> getHoursByTime(@RequestParam String time) {
         HashMap<String, Object> map = new HashMap<>();
-        logger.info("这里是controller");
+        logger.info("这里是HomeController,getHoursByTime()");
         map.put("code", 201);//
         map.put("time", time);
-        map.put("message", "模拟登录，登录失败！");
+        map.put("message", "获取");
         return map;
     }
 
