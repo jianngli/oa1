@@ -1,11 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>登录</title>
-    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
-
+    <title>Login</title>
+    <meta charset="UTF-8"/>
+    <link th:href="@{css/bootstrap.min.css}" rel="stylesheet" type="text/css"/>
+    <style>
+      body{
+          background-color:#ccc
+        }
+    </style>
 </head>
+
 <body>
 <div class="container">
     <div class="row">
@@ -16,18 +21,15 @@
                        placeholder="user name or e-mail"/>
                 <input type="password" id="userPassword" class="form-control input-sm chat-input"
                        placeholder="password"/>
-                </br>
                 <div class="wrapper">
-            <span class="group-btn">
-                <a href="#" id="btnSubmit" class="btn btn-primary btn-md pull-right">Login <i class="fa fa-sign-in"></i></a>
-            </span>
+                    <span class="group-btn">
+                        <a href="#" id="btnSubmit" class="btn btn-primary btn-md pull-right">Login <i class="fa fa-sign-in"></i></a>
+                     </span>
                 </div>
             </div>
-
         </div>
     </div>
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true" hidden
-         data-backdrop="static">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true" hidden="hidden" data-backdrop="static">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -44,8 +46,8 @@
         </div>
     </div>
 </div>
-<script src="../js/jquery-3.2.0.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-<script src="../js/login.js"></script>
+<script th:src="@{js/jquery-3.2.0.min.js}"></script>
+<script th:src="@{js/bootstrap.min.js}"></script>
+<script th:src="@{js/login.js}"></script>
 </body>
 </html>

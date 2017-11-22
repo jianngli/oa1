@@ -5,7 +5,7 @@
 function login(userName, password) {
     $.ajax({
         method: 'POST',
-        url: '../../controller/Login.php',
+        url: '/login',
         data: {
             'userName': userName,
             'password': password

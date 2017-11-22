@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>TimeSheetSystem</title>
-    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link th:href="@{css/bootstrap.min.css}" rel="stylesheet" type="text/css"/>
     <style>
         tr, td, th, .full-width {
             width: 100%;
@@ -90,9 +90,10 @@
         <button id="btnSubmit" class="btn-success">Submit</button>
     </div>
 </div>
-<script src="../js/jquery-3.2.0.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-<script src="../js/DayApp.js"></script>
-<script src="../js/index.js"></script>
+<script th:src="@{js/jquery-3.2.0.min.js}"></script>
+<script th:src="@{js/bootstrap.min.js}"></script>
+<script th:src="@{js/DayApp.js}"></script>
+<script th:src="@{js/AjaxWrapper.js}"></script>
+<script th:src="@{js/index.js}"></script>
 </body>
 </html>
